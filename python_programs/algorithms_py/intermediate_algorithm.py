@@ -328,12 +328,15 @@ def prime_mover(prime):
 		if prime % i == 0:
 			return False
 			break
-	return str(prime)
-
-for p in range(2,50):
-	print(prime_mover(p))
+	return prime
+def prime_list(prime):
+	empty = []
+	for i in range(2,prime):
+		if prime_mover(i):
+			empty.append(i)
+	return empty
+print(prime_list(10))
 print
-#print tuple(range(10))
 
 # gcd between two numbers
 def gcd_two(x,y):
