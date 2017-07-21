@@ -326,7 +326,7 @@ print
 def prime_mover(prime):
 	for i in tuple(range(2,prime)):
 		if prime % i == 0:
-			#str(prime) + ' --> not prime'
+			return False
 			break
 	return str(prime) + ' --> prime'
 
