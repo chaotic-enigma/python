@@ -328,7 +328,7 @@ def prime_mover(prime):
 		if prime % i == 0:
 			return False
 			break
-	return str(prime) + ' --> prime'
+	return str(prime)
 
 for p in range(2,50):
 	print(prime_mover(p))
