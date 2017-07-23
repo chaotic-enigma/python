@@ -581,5 +581,5 @@ def diagonal_matrix(matrix):
 		diagonal.append(matrix[i][i])
 	for i in range(len(matrix[0])):
 		rev_diagonal.append(matrix[len(matrix[0])-1-i][i])
-	return diagonal,rev_diagonal[::-1],sum(diagonal),sum(remove)
+	return diagonal,rev_diagonal[::-1],sum(diagonal),sum(rev_diagonal)
 print(diagonal_matrix([[1,2,3,4],[5,6,7,8],[9,10,11,12],[13,14,15,16]]))
