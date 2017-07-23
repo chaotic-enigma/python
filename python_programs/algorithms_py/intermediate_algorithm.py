@@ -572,3 +572,14 @@ print(look_say([1,2,4,5,6,3,2,2]))
 print(look_say([]))
 print
 
+# diagonals of a matrix
+def diagonal_matrix(matrix):
+	print(matrix)
+	diagonal = []
+	rev_diagonal = []
+	for i in range(len(matrix[0])):
+		diagonal.append(matrix[i][i])
+	for i in range(len(matrix[0])):
+		rev_diagonal.append(matrix[len(matrix[0])-1-i][i])
+	return diagonal,rev_diagonal[::-1],sum(diagonal),sum(remove)
+print(diagonal_matrix([[1,2,3,4],[5,6,7,8],[9,10,11,12],[13,14,15,16]]))
