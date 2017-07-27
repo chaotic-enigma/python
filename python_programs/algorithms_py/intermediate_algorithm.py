@@ -391,13 +391,14 @@ print
 # counting the repeated letter
 # yet to be done
 
-# simple mode, since i'm using python 2.7.6, numpy cannot be imported due to some reasons though i have installed
-"""import numpy as np
+# simple mode
+import numpy as np
 def simple_mode(arr):
 	frequent = np.array(arr)
 	frequency = np.bincount(frequent)
 	return np.argmax(frequency), np.argmin(frequency) # takes in ascending order including zero
-print(simple_mode([1,1,1,12,3,2,4,5,6,1,1,1]))"""
+print(simple_mode([1,1,1,12,3,2,4,5,6,1,1,1]))
+print
 
 # ceaser cipher
 def ceaser_cipher(str):
