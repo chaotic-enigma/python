@@ -389,7 +389,31 @@ print(arr_addition([1,2,3,4,5]))
 print 
 
 # counting the repeated letter
-# yet to be done
+# can also be used Counter method from collections.
+def give_most_repeated(some):
+	some = str(some)
+	some_list = list(set(some))
+	count_catch = []
+	for i in some:
+		for j in some_list:
+			if j == i:
+				count_catch.append({j : some.count(i)})
+	clean_refine = []
+	for each in count_catch:
+		if each not in clean_refine:
+			clean_refine.append(each)
+	vals = []
+	kys = []
+	for i in clean_refine:
+		for k, v in i.items():
+			kys.append(k)
+			vals.append(v)
+	most_repeated = max(vals)
+	for i in clean_refine:
+		for k, v in i.items():
+			if v == most_repeated:
+				return k + ' --> ' + str(v)
+print(give_most_repeated(112111))
 
 # simple mode
 import numpy as np
